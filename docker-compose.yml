@@ -6,9 +6,9 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: mariadb
-      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_USER: sureyya
       WORDPRESS_DB_PASSWORD: 030121035
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_NAME: vize
     volumes:
       - wordpress:/var/www/html
     depends_on:
@@ -19,7 +19,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 030121035
-      MYSQL_DATABASE: wordpress
+      MYSQL_DATABASE: vize
       MYSQL_USER: root
       MYSQL_PASSWORD: 030121035
     volumes:
